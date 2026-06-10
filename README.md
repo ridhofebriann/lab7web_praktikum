@@ -32,7 +32,7 @@ Mengelola data dalam jumlah besar dan mendalami arsitektur relasional database.
 * **Penjelasan Teknis:** * **Pagination & Search:** Memanfaatkan library bawaan CI4 `$builder->paginate()` untuk membatasi data per halaman, dan `$builder->like()` untuk pencarian berbasis Query Builder.
   * **Relasi Tabel:** Membuat relasi *One-to-Many* antara tabel `kategori` dan `artikel`. Pengambilan data dilakukan dengan fungsi `->join()` agar nama kategori bisa tampil bersama data artikel tanpa perlu query berulang.
 * **Tampilan Form dengan Kategori:**
-![Praktikum 6](Taruh_Screenshot_Praktikum_6_Disini)
+![Praktikum 6](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/praktikum5-6.png?raw=true)
 
 ### 4. Praktikum 7: Upload File Gambar
 * **Penjelasan Teknis:** Memodifikasi tag `<form>` dengan atribut `enctype="multipart/form-data"` agar dapat memproses file biner. Di sisi Controller, file gambar ditangkap menggunakan `$this->request->getFile()`, divalidasi, lalu dipindahkan (move) ke direktori `public/gambar`.
