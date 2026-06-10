@@ -37,7 +37,7 @@ Mengelola data dalam jumlah besar dan mendalami arsitektur relasional database.
 ### 4. Praktikum 7: Upload File Gambar
 * **Penjelasan Teknis:** Memodifikasi tag `<form>` dengan atribut `enctype="multipart/form-data"` agar dapat memproses file biner. Di sisi Controller, file gambar ditangkap menggunakan `$this->request->getFile()`, divalidasi, lalu dipindahkan (move) ke direktori `public/gambar`.
 * **Tampilan Form Upload:**
-![Praktikum 7](Taruh_Screenshot_Praktikum_7_Disini)
+![Praktikum 7](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/praktikum7.png?raw=true)
 
 ---
 
@@ -47,7 +47,7 @@ Mengelola data dalam jumlah besar dan mendalami arsitektur relasional database.
 Mengubah metode *reload* halaman tradisional menjadi *Asynchronous* (tanpa muat ulang).
 * **Penjelasan Teknis & Alur Kerja:** Pencarian dan pemuatan halaman dilakukan melalui **jQuery AJAX**. Saat *user* mengetik pencarian, JavaScript mengirim request ke CodeIgniter. Di sisi server, method `admin_index()` mengecek apakah request tersebut adalah AJAX menggunakan `$this->request->isAJAX()`. Jika ya, server mengembalikan data dalam format **JSON** (bukan me-render View HTML). JavaScript kemudian menangkap JSON tersebut dan menggambar ulang (`render`) isi tabel secara *real-time*.
 * **Tampilan Search & Pagination AJAX:**
-![Praktikum 9](Taruh_Screenshot_Praktikum_9_Disini)
+![Praktikum 9](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/praktikum8-9.png?raw=true)
 
 ---
 
@@ -57,7 +57,9 @@ Mengubah metode *reload* halaman tradisional menjadi *Asynchronous* (tanpa muat 
 Mengubah arsitektur aplikasi menjadi penyedia layanan data (REST Server).
 * **Penjelasan Teknis & Alur Kerja:** Membuat controller `Post.php` yang meng-extend `ResourceController` dan memanfaatkan `ResponseTrait` untuk mempermudah format balasan berupa JSON . Rute API didaftarkan secara otomatis menggunakan `$routes->resource('post');` yang langsung menghasilkan *endpoint* untuk metode GET, POST, PUT, dan DELETE. Pengujian fungsionalitas CRUD API dilakukan secara terpisah tanpa antarmuka web menggunakan aplikasi REST Client seperti **Postman** [cite: 1804-1805, 1965-1966].
 * **Tampilan Uji Coba API (Postman):**
-![Praktikum 10 Postman](Taruh_Screenshot_Postman_Praktikum_10_Disini)
+![Praktikum 10 Postman GET](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/GET.png?raw=true)
+
+![Praktikum 10 Postman PUST](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/POST1.png?raw=true)
 
 ### 7. Praktikum 11 & 12: Integrasi VueJS dan Vue Router (SPA)
 Memisahkan sepenuhnya *Frontend* (VueJS) dan *Backend* (CodeIgniter 4 REST API).
