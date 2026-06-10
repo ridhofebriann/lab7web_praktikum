@@ -59,19 +59,23 @@ Mengubah arsitektur aplikasi menjadi penyedia layanan data (REST Server).
 * **Tampilan Uji Coba API (Postman):**
 ![Praktikum 10 Postman GET](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/GET.png?raw=true)
 
-![Praktikum 10 Postman PUST](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/POST1.png?raw=true)
+![Praktikum 10 Postman POST](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/POST1.png?raw=true)
+
+![Praktikum 10 Postman PUT](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/PUT.png?raw=true)
+
+![Praktikum 10 Postman DELETE](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/DELETE.png?raw=true)
 
 ### 7. Praktikum 11 & 12: Integrasi VueJS dan Vue Router (SPA)
 Memisahkan sepenuhnya *Frontend* (VueJS) dan *Backend* (CodeIgniter 4 REST API).
 * **Penjelasan Teknis:** Aplikasi diubah menjadi *Single Page Application* (SPA) menggunakan **Vue Router**. UI dipecah menjadi komponen modular (`Home.js`, `Artikel.js`, `About.js`). Vue Router bekerja dengan menukar (me-mount) komponen-komponen tersebut ke dalam tag `<router-view>` berdasarkan URL yang diakses. Hal ini membuat perpindahan antar halaman menjadi instan seperti aplikasi *mobile*, sementara data CRUD ditarik melalui REST API (`/post`) menggunakan **Axios**.
 * **Tampilan Menu About SPA:**
-![Praktikum 12](Taruh_Screenshot_Praktikum_12_Disini)
+![Praktikum 12](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/praktikum11-12.png?raw=true)
 
 ### 8. Praktikum 13: VueJS Autentikasi & Navigation Guards
 Menerapkan perlindungan sisi klien (*Client-Side Security*).
 * **Penjelasan Teknis:** Menggunakan fungsi `router.beforeEach` pada Vue Router yang bertindak sebagai "Satpam Frontend". Setiap kali pengguna berpindah rute yang memiliki label `requiresAuth: true`, sistem akan mengecek keberadaan token login di `localStorage`. Jika tidak ada, pengguna diblokir dan diarahkan ke form Login.
 * **Tampilan Form Login VueJS:**
-![Praktikum 13](Taruh_Screenshot_Praktikum_13_Disini)
+![Praktikum 13](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/praktikum%2013.png?raw=true)
 
 ### 9. Praktikum 14: Keamanan API, Token Auth, & Axios Interceptors
 Menerapkan perlindungan sisi server (*Server-Side Security*) berlapis untuk mencegah *bypass* database.
@@ -81,9 +85,9 @@ Menerapkan perlindungan sisi server (*Server-Side Security*) berlapis untuk menc
 
 **📸 Hasil Uji Coba Keamanan Lapis Ganda:**
 * **Bukti API Ditolak via Postman (Tanpa Token):** Server CI4 berhasil memblokir akses ilegal.
-![Praktikum 14 Postman](Taruh_Screenshot_Postman_Praktikum_14_Disini)
+![Praktikum 14 Postman](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/prakitkum%2014%20postman.png?raw=true)
 * **Bukti API Diterima via VueJS (Dengan Interceptors):** Akses diterima secara transparan berkat token otomatis.
-![Praktikum 14 VueJS](Taruh_Screenshot_VueJS_Praktikum_14_Disini)
+![Praktikum 14 VueJS](https://github.com/ridhofebriann/lab7web_praktikum/blob/main/praktikum%2014%20vuejs.png?raw=true)
 
 ---
 
